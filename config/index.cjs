@@ -27,26 +27,14 @@ const USER_CONFIG = {
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '12-27',
       festivals: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+       
         {
-          type: '*生日', name: '瑶瑶女士', year: '2004', date: '01-04',
-        },
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
+          type: '生日', name: '瑶瑶女士', year: '2004', date: '01-04',
         },
         {
           type: '节日', name: '相识纪念日', year: '2022', date: '10-27',
         },
-      ],
-      // 我们在一起已经有xxxx天了的配置
-      customizedDateList: [
-        // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
-      ],
-    },
+
   ],
 
 
@@ -55,20 +43,20 @@ const USER_CONFIG = {
 
   CALLBACK_USERS: [
     {
-      name: '自己',
+      name: '吴佳龙',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'Luckily-meetingyou',
     }
   ],
 
 }
-今天是：{{date.DATA}}
-不管那一天，每一天都是爱你的一天
-当前城市：{{city.DATA}}
-今天的天气：{{weather.DATA}}
-最低气温：{{min_temperature.DATA}}
-最高气温：{{max_temperature.DATA}}
-今天距离我们认识已经过去{{love_day.DATA}}天了
+//今天是：{{date.DATA}}
+//不管那一天，每一天都是爱你的一天
+//当前城市：{{city.DATA}}
+//今天的天气：{{weather.DATA}}
+//最低气温：{{min_temperature.DATA}}
+//最高气温：{{max_temperature.DATA}}
+//今天距离我们认识已经过去{{love_day.DATA}}天了
 
 module.exports = USER_CONFIG
 
