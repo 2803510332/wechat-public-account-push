@@ -8,35 +8,35 @@
 const USER_CONFIG = {
 
   // 使用微信测试号：公众号APP_ID
-  APP_ID: '',
+  APP_ID: 'wx16743fdfb05030b2',
 
   // 使用微信测试号：公众号APP_SECRET
-  APP_SECRET: '',
+  APP_SECRET: '9f1c2f7fa8d1e00f58be4d886f86a9ea',
 
-  PROVINCE: '广东',
-  CITY: '惠州',
+  PROVINCE: '浙江',
+  CITY: '嘉兴',
 
   USERS: [
     {
       // 想要发送的人的名字
-      name: '宝贝',
+      name: '瑶瑶女士',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: '',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: '',
+      useTemplateId: '3JQ50FXgrBKrnVOFkB2_x1uTdkwJUVNM5uVKV-1AXYE',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '12-27',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '宝贝', year: '1996', date: '09-09',
+          type: '*生日', name: '瑶瑶女士', year: '2004', date: '01-04',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
           type: '生日', name: '李四', year: '1996', date: '09-31',
         },
         {
-          type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
+          type: '节日', name: '相识纪念日', year: '2022', date: '10-27',
         },
       ],
       // 我们在一起已经有xxxx天了的配置
@@ -62,6 +62,13 @@ const USER_CONFIG = {
   ],
 
 }
+今天是：{{date.DATA}}
+不管那一天，每一天都是爱你的一天
+当前城市：{{city.DATA}}
+今天的天气：{{weather.DATA}}
+最低气温：{{min_temperature.DATA}}
+最高气温：{{max_temperature.DATA}}
+今天距离我们认识已经过去{{love_day.DATA}}天了
 
 module.exports = USER_CONFIG
 
